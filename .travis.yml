@@ -3,18 +3,19 @@ cache: bundler
 dist: trusty
 sudo: false
 rvm:
-  - 2.2.7
-  - 2.3.4
-  - 2.4.1
-  - ruby-head
-
+- 2.2.7
+- 2.3.4
+- 2.4.1
+- ruby-head
 matrix:
   allow_failures:
-    - rvm: ruby-head
-
+  - rvm: ruby-head
 deploy:
   provider: rubygems
   api_key:
-    secure:
+    secure: UiCs6TqVqocH6X0NKtz0jecqWxr8HSByrx68BUxdetNmnUwgb5Rf43tziX1aCRD2rRlkG1RJelChYtKP9SUzWQ+vPSnh964SHAcGcMfrhJxEBE8zQMtz/5vsfZIvCJu3UoMf+StAgVGRjiNSrRjD0gZY76SBFlWhk50/pflY+RQTkB8lpa5kyFvioxGxIHzSo5pT9KGIvjCQOykwh8JU4TdaFrud4ptY2eEge9tEM7peU5+sR8+6c3qQ8a0T7q14LRVtNrl6pZ7LoYMUBTCJn2UBfTk0PDSQpjfbawpABB5PIP9/ewrJiCrw7G35qMcwZ1pbWzY+IS19Uq+q150qXjXaUXPm0+Jl52Wq7Wj0L3/pTIwb0NzaCq32DWzTeqaSZno6bewGBFnwyJhDwiY+B2Fur7Z295ZgmZQSwpHQFCN5+GGsgG/XLmQKUhlit9hijQ3IkdZGEv9sAb9YBLSmFtNoYvhTcDFt4zdfr9Y0nmLwatJe9nplFtrUunsgGu9BC2TDw9NKGylOvsonIyKNRdor4jZCqyTs7sGpE4GGgF0+nPKwHreXn3RjQbSe1fn6AawibSkvq6B8vdBgdfowJ1Q+sCL88NoW4WavoY03NrOtGUNFF7oXw+NgPehTIdFCadelku/7akwTpeOH30cOSkkgaXio24CIIF2+VIjat/E=
+  gem: knife-atomic
   on:
+    tags: true
+    repo: manoelhc/knife-atomic
 tags: true
