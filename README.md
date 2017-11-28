@@ -60,7 +60,7 @@ override_attributes:
 
 *IMPORTANT NOTE*: This plugin does not apply any changes (yet). You have to set it manually. For instance, you can do it by storing the JSON output and work with ```knife environment edit <environment_name>``` or ```knife environment from file <path_to_json_file>```
 
-## Why should we care about cookbooks version?
+## Why should we care about versions?
 
 There is a bunch of reasons to pin the cookbook versions. A really good one is to
 fix versions on prod to prevent deploying latest versions on prod, and thus avoiding
