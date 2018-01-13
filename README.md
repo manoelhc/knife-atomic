@@ -4,9 +4,9 @@
 
 Knife plugin to retrieve Chef structures with pinned versions of the cookbooks.
 
-Basically, this plugin retrieves all the information from ```knife environment show <environment_name>``` and adds all the cookbook versions installed on nodes under the referred environment.
+This plugin retrieves all the information from ```knife environment show <environment_name>``` and adds all the cookbook versions installed on nodes under the referred environment.
 
-In other words, this plugin crosses information between the nodes to collect the installed cookbook versions and then outputs the environment information with them.
+In other words, this plugin crosses information between the nodes to collect the installed cookbook versions and then outputs the environment details with them.
 
 The command ```knife environment show <environment_name>``` retrieves something like:
 ```
@@ -62,7 +62,7 @@ override_attributes:
 
 ## Why should we care about versions?
 
-There is a bunch of reasons to pin the cookbook versions. A really good one is to
+There is a bunch of reasons to pin the cookbook versions. An excellent one is to
 fix versions on prod to prevent deploying latest versions on prod, and thus avoiding
 potential conflicts or installing local cookbooks which are in dev/test phase. When
 your company uses a Chef server for all environments (dev/QA/prod), think about it.
@@ -73,7 +73,7 @@ Requirements:
  *  Chef 12.0 higher
  *  Ruby 2.2.2 or higher
 
-You need to use ChefDK's gem and simply install as below:
+You need to use ChefDK's gem and merely install as below:
 ```bash
 chef gem install knife-atomic
 ```
